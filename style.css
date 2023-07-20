@@ -1,0 +1,475 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d9bd9c;
+}
+
+#banner {
+    background: linear-gradient(rgba(45, 28, 28, 0.8), rgba(23, 13, 13, 0.8)), url('bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.logo {
+    height: 80px;
+    width: 70px;
+    position: absolute;
+    margin-left: 10px;
+    /* margin-top: 5px; */
+}
+
+.bannertext {
+    text-align: center;
+    color: #22A699;
+    padding-top: 250px;
+}
+
+.bannertext h2 {
+    font-size: 80px;
+    text-transform: uppercase;
+    font-family: 'Cardo', serif;
+}
+
+.bannertext p {
+    font-size: 20px;
+    /* text-transform: capitalize; */
+    font-family: 'Caveat', cursive;
+    font-style: italic;
+}
+
+#navlist {
+    display: flex;
+    list-style-type: none;
+    float: right;
+    margin-top: 25px;
+}
+
+#navlist li a {
+    text-decoration: none;
+    margin: 2px;
+    font-size: 25px;
+    color: #22A699;
+    padding: 15px;
+    border: 1px solid;
+    transition-timing-function: ease;
+    transition-property: all;
+    transition-duration: 2ms;
+}
+
+#navlist li a:hover {
+    color: #b7ddeb;
+    font-size: 30px;
+    background-color: #F24C3D;
+}
+
+/* when we are on the home page while opening the site,it adds the hover effect to home button. */
+/* li.home a {
+    color: #b7ddeb;
+    font-size: 30px;
+    background-color: #F24C3D;
+} */
+
+/* services */
+/* .services {
+    margin: 50px;
+} */
+
+#servicesheading {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    font-size: 60px;
+    font-family: 'Mate SC', serif;
+    color: #d27b9c;
+    text-shadow: 2px 2px 8px #242222;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+
+#servicesheading:hover {
+    color: #b93872;
+    font-style: italic;
+}
+
+/* spirituality */
+.featurediv {
+    height: 400px;
+    width: 1000px;
+    position: relative;
+    float: left;
+    left: 150px;
+    top: 50px;
+    background: linear-gradient(rgba(71, 42, 42, 0.5), rgba(108, 16, 16, 0.5)), url('sp_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+}
+
+.featurediv:hover {
+    height: 450px;
+    width: 1100px;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    /* transition-delay: 2s; */
+}
+
+.featurediv h4 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Cardo', serif;
+    font-style: italic;
+    color: #FFD0D0;
+}
+
+.featurediv h4:hover {
+    font-size: 60px;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+
+#featuretext {
+    margin-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #FFD3A3;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+}
+
+#featuretext a {
+    font-family: 'Shadows Into Light', cursive;
+    color: #DAFFFB;
+}
+
+#featuretext a:hover {
+    color: #FF90BB;
+}
+
+#featuretext a:visited {
+    color: #E1AEFF;
+}
+
+/* meditation */
+.meditation {
+    height: 400px;
+    width: 1000px;
+    background: linear-gradient(rgba(119, 77, 77, 0.6), rgba(40, 19, 19, 0.5)), url('medi_bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    float: right;
+    right: 150px;
+    top: 150px;
+    border-radius: 25px;
+}
+
+.meditation:hover {
+    height: 450px;
+    width: 1100px;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+
+#meditationheading {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Cardo', serif;
+    font-style: italic;
+    color: #FFD0D0;
+}
+
+#meditationheading:hover {
+    font-size: 60px;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+
+#meditationtext {
+    margin-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #DAFFFB;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+}
+
+#meditationtext a {
+    font-family: 'Shadows Into Light', cursive;
+    color: #DAFFFB;
+}
+
+#meditationtext a:hover {
+    color: #FF90BB;
+}
+
+#meditationtext a:visited {
+    color: #E1AEFF;
+}
+
+/* scriptures */
+.scriptures {
+    height: 400px;
+    width: 1000px;
+    background: linear-gradient(rgba(119, 77, 77, 0.6), rgba(40, 19, 19, 0.8)), url('scripture_bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    float: left;
+    left: 150px;
+    top: 250px;
+    border-radius: 25px;
+}
+
+.scriptures:hover {
+    height: 450px;
+    width: 1100px;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+
+#scripturesheading {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Cardo', serif;
+    font-style: italic;
+    color: #7DB9B6;
+}
+
+#scripturesheading:hover {
+    font-size: 60px;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+
+#scripturestext {
+    margin-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #DAFFFB;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+}
+
+#scripturestext a {
+    font-family: 'Shadows Into Light', cursive;
+    color: #DAFFFB;
+}
+
+#scripturestext a:hover {
+    color: #FF90BB;
+}
+
+#scripturestext a:visited {
+    color: #E1AEFF;
+}
+
+/* Hinduism */
+.hinduism {
+    height: 400px;
+    width: 1000px;
+    background: linear-gradient(rgba(87, 51, 51, 0.8), rgba(57, 29, 29, 0.8)), url('hinduism_bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    float: right;
+    right: 150px;
+    top: 350px;
+    border-radius: 25px;
+}
+
+.hinduism:hover {
+    height: 450px;
+    width: 1100px;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+
+#hinduismheading {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Cardo', serif;
+    font-style: italic;
+    color: #FFD0D0;
+}
+
+#hinduismheading:hover {
+    font-size: 60px;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+
+#hinduismtext {
+    margin-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #DAFFFB;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+}
+
+#hinuismtext a {
+    font-family: 'Shadows Into Light', cursive;
+    color: #DAFFFB;
+}
+
+#hinduismtext a:hover {
+    color: #FF90BB;
+}
+
+#hinduismtext a:visited {
+    color: #E1AEFF;
+}
+
+/* hindu mythology */
+.mythology {
+    height: 400px;
+    width: 1000px;
+    background: linear-gradient(rgba(58, 28, 28, 0.8), rgba(35, 22, 22, 0.8)), url('mythology_bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    float: left;
+    left: 150px;
+    top: 450px;
+    border-radius: 25px;
+    margin-bottom: 560px;
+}
+
+.mythology:hover {
+    height: 450px;
+    width: 1100px;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+
+#mythologyheading {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Cardo', serif;
+    font-style: italic;
+    color: #FFD0D0;
+}
+
+#mythologyheading:hover {
+    font-size: 60px;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+
+#mythologytext {
+    margin-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #DAFFFB;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+}
+
+#mythologytext a {
+    font-family: 'Shadows Into Light', cursive;
+    color: #DAFFFB;
+}
+
+#mythologytext a:hover {
+    color: #FF90BB;
+}
+
+#mythologytext a:visited {
+    color: #E1AEFF;
+}
+
+/* footer */
+.container {
+    height: 400px;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    background: linear-gradient(rgba(49, 43, 43, 0.7), rgba(54, 48, 48, 0.7)), url('footer_bg.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .container#footer {
+    align-items: flex-end;
+} */
+
+#footerbox div {
+    display: inline-block;
+    position: relative;
+    top: 120px;
+    left: 320px;
+    font-size: 30px;
+    font-family: 'Caveat', cursive;
+    color: #A2FF86;
+}
+
+#footerbox #quicklinks {
+    margin-right: 500px;
+    list-style-type: none;
+}
+
+#footerbox #quicklinks li a {
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    padding-left: 40px;
+}
+
+#footerbox #quicklinks li a:hover {
+    color: #F1C27B;
+}
+
+#footerbox #follow {
+    top: 0px;
+    list-style-type: none;
+}
+
+#footerbox #follow li {
+    display: inline-block;
+}
+
+#footerbox #follow li a img {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    margin: 10px;
+}
+
+#footerbox #copy {
+    color: #DAFFFB;
+    margin-top: 150px;
+    margin-left: 1300px;
+}

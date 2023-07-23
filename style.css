@@ -17,11 +17,12 @@ body {
 }
 
 .logo {
-    height: 80px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     position: absolute;
     margin-left: 10px;
     /* margin-top: 5px; */
+    border-radius: 50%;
 }
 
 .bannertext {
